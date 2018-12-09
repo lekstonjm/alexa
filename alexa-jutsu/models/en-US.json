@@ -1,0 +1,63 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "jutsu",
+			"intents": [
+				{
+					"name": "AMAZON.CancelIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.HelpIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.StopIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.YesIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.NoIntent",
+					"samples": []
+				},
+				{
+					"name": "ListHand",
+					"samples":[
+						"Describe my hand",
+						"Lists my hand",
+						"Show me my hand"
+					],
+					"slots":[]
+				},
+				{
+					"name": "PlayCard",
+					"samples" : [
+						"I'm playing {card_name}",
+						"Be fear of the {card_game}",
+						"Admire the technic of {card_game}"
+					],
+					"slots":[{
+						"name" : "card_name"
+						, "type" : "CARD_LIST"
+					}]
+				}
+			],
+			"types" : [
+				{
+					"name" : "CARD_LIST",
+					"values":[
+						{
+							"name": { "value" : "A thousand years of pain" }
+						},
+						{
+							"name" : { "Value" : "Supreme fireball jutsu"}
+						}
+					]
+				}
+			]
+		}
+	}
+}

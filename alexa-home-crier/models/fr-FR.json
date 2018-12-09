@@ -1,0 +1,65 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "crieur public",
+			"intents": [
+				{
+					"name": "AnnouncementIntent",
+					"slots":[
+						{
+							"name" : "Announcement" ,
+							"type" : "ANNOUNCEMENTS"
+						}
+					],					
+					"samples":[
+						"annonce qu'il est l'heure de {Announcement}",
+						"dit qu'il est temps de  {Announcement}",
+						"il est l'heure de {Announcement}"
+					]
+				},
+				{ "name": "AMAZON.CancelIntent" },
+				{ "name": "AMAZON.HelpIntent" },
+				{ "name": "AMAZON.StopIntent"},			
+				{ "name": "AMAZON.RepeatIntent"}			
+			],
+			"types" : [
+				{
+					"name" : "ANNOUNCEMENTS",
+					"values":[
+						{
+							"name": { "value" : "mettre la table" }
+						},
+						{
+							"name": { "value" : "manger" }
+						},						
+						{
+							"name" : { "value" : "nettoyer la table"}
+						},
+						{
+							"name" : { "value" : "faire la vaisselle"}
+						},
+						{
+							"name" : { "value" : "faire ses devoirs"}
+						},
+						{
+							"name" : { "value" : "sortir le chien"}
+						},
+						{
+							"name" : { "value" : "nourrir les animaux"}
+						},
+						{
+							"name" : { "value" : "jouer"}
+						},						
+						{
+							"name" : { "value" : "se coucher"}
+						},
+						{
+							"name" : { "value" : "faire des bisous"}
+						}						
+												
+					]
+				}
+			]
+		}
+	}
+}

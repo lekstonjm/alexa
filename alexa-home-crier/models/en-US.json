@@ -1,0 +1,55 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "town crier",
+			"intents": [
+				{
+					"name": "AnnouncementIntent",
+					"slots":[
+						{
+							"name" : "Announcement" ,
+							"type" : "ANNOUNCEMENTS"
+						}
+					],					
+					"samples":[
+						"announce that it is time {Announcement}",
+						"tell that it is time  {Announcement}",
+						"it is time {Announcement}"
+					]
+				},
+				{ "name": "AMAZON.CancelIntent" },
+				{ "name": "AMAZON.HelpIntent" },
+				{ "name": "AMAZON.StopIntent"},			
+				{ "name": "AMAZON.RepeatIntent"}			
+			],
+			"types" : [
+				{
+					"name" : "ANNOUNCEMENTS",
+					"values":[
+						{
+							"name": { "value" : "to set the table" }
+						},
+						{
+							"name": { "value" : "to eat" }
+						},						
+						{
+							"name" : { "value" : "to clear the table"}
+						},
+						{
+							"name" : { "value" : "to do dishes"}
+						},
+						{
+							"name" : { "value" : "to do homework"}
+						},
+						{
+							"name" : { "value" : "to walk the dog"}
+						},
+						{
+							"name" : { "value" : "to feed the dog"}
+						}
+					]
+				}
+			]
+		}
+	}
+}

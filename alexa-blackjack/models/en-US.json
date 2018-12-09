@@ -1,0 +1,47 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "blackjack",
+			"intents": [
+				{
+					"name": "AMAZON.CancelIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.HelpIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.StopIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.YesIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.NoIntent",
+					"samples": []
+				},
+				{
+					"name": "NewCardIntent",
+					"samples": [
+						"give me a card",
+						"one more please",
+						"another one."
+					],
+					"slots": []					
+				},
+				{
+					"name": "NoMoreCardIntent",
+					"samples": [
+						"I'm full",
+						"no more please",
+						"that's enough."
+					],
+					"slots": []					
+				}
+			]
+		}
+	}
+}

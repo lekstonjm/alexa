@@ -1,0 +1,13 @@
+{
+    "name": "alexa-blackjack",
+    "version": "1.0.0",
+    "description": "blackjack game for Alexa",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Lekston Jean-Michel",
+    "dependencies": {
+        "alexa-sdk": "^1.0.0"
+    }
+}

@@ -1,0 +1,71 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "logotopie",
+			"intents": [
+				{
+					"name": "DescribeIntent",
+					"slots":[
+					],					
+					"samples":[
+						"Décris la pièce",
+						"Qu'est ce que je vois"
+					]
+				},				
+				{
+					"name": "ReadIntent",
+					"slots":[
+					],					
+					"samples":[
+						"Je lis le message sur le mur",
+						"Je lis",
+						"Dis moi ce qu'il y a d'écrit"
+					]
+				},
+				{
+					"name": "GoThroughDoorIntent",
+					"slots":[
+						{
+							"name" : "Index" ,
+							"type" : "AMAZON.NUMBER"
+						}
+					],					
+					"samples":[
+						"Je passe la porte {Index}",
+						"Je franchis la porte {Index}" 
+					]
+				},
+				{
+					"name": "RemoveIntent",
+					"slots":[
+						{
+							"name" : "Word" ,
+							"type" : "RULE_WORD"
+						}
+					],					
+					"samples":[
+						"Je retire le mot {word}",
+						"J'enlève le mot {Word}"
+					]
+				},																
+				{ "name": "AMAZON.CancelIntent" },
+				{ "name": "AMAZON.HelpIntent" },
+				{ "name": "AMAZON.StopIntent"},			
+				{ "name": "AMAZON.RepeatIntent"}			
+			],
+			"types" : [
+				{
+					"name" : "RULE_WORD",
+					"values":[
+						{
+							"name": { "value" : "fermée" }
+						},
+						{
+							"name": { "value" : "ouverte" }
+						}												
+					]
+				}
+			]
+		}
+	}
+}

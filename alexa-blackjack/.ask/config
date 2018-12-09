@@ -1,0 +1,19 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.540b1f8f-ce19-40cf-821f-c7306668e615",
+      "was_cloned": false,
+      "merge": {
+        "skillManifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-blackjack"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
